@@ -1,8 +1,10 @@
 package com.pneushop.pneushopbackend.entity;
 
 import com.pneushop.pneushopbackend.entity.enums.Role;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
+
 
 @Entity
 @Table(name = "utilisateur")
@@ -20,10 +22,11 @@ public class Utilisateur {
 
     @Column(nullable = false, unique = true, length = 150)
     private String email;
-
-    @Column(name = "mot_de_passe", nullable = false, length = 255)
-    private String motDePasse;
-
+   
+   @JsonIgnore
+   @Column(name = "mot_de_passe", nullable = false, length = 255)
+   private String motDePasse;
+    
     @Column(length = 20)
     private String telephone;
 

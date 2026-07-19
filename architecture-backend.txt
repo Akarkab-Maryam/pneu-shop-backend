@@ -1,0 +1,102 @@
+Structure du dossier
+Le num‚ro de s‚rie du volume est 2C42-8FC1
+C:.
+³   .gitattributes
+³   .gitignore
+³   architecture-backend.txt
+³   HELP.md
+³   mvnw
+³   mvnw.cmd
+³   pom.xml
+³   README.md
+³   
+ÃÄÄÄ.mvn
+³   ÀÄÄÄwrapper
+³           maven-wrapper.properties
+³           
+ÃÄÄÄsrc
+³   ÃÄÄÄmain
+³   ³   ÃÄÄÄjava
+³   ³   ³   ÀÄÄÄcom
+³   ³   ³       ÀÄÄÄpneushop
+³   ³   ³           ÀÄÄÄpneushopbackend
+³   ³   ³               ³   PneuShopBackendApplication.java
+³   ³   ³               ³   
+³   ³   ³               ÃÄÄÄconfig
+³   ³   ³               ³       CorsConfig.java
+³   ³   ³               ³       DataInitializer.java
+³   ³   ³               ³       SecurityConfig.java
+³   ³   ³               ³       
+³   ³   ³               ÃÄÄÄcontroller
+³   ³   ³               ³       AuthController.java
+³   ³   ³               ³       CommandeController.java
+³   ³   ³               ³       ImagePneuController.java
+³   ³   ³               ³       PneuController.java
+³   ³   ³               ³       UtilisateurController.java
+³   ³   ³               ³       
+³   ³   ³               ÃÄÄÄdto
+³   ³   ³               ³       CommandeRequest.java
+³   ³   ³               ³       LigneCommandeRequest.java
+³   ³   ³               ³       LoginRequest.java
+³   ³   ³               ³       LoginResponse.java
+³   ³   ³               ³       
+³   ³   ³               ÃÄÄÄentity
+³   ³   ³               ³   ³   Commande.java
+³   ³   ³               ³   ³   ImagePneu.java
+³   ³   ³               ³   ³   LigneCommande.java
+³   ³   ³               ³   ³   Pneu.java
+³   ³   ³               ³   ³   Utilisateur.java
+³   ³   ³               ³   ³   
+³   ³   ³               ³   ÀÄÄÄenums
+³   ³   ³               ³           Role.java
+³   ³   ³               ³           SaisonPneu.java
+³   ³   ³               ³           StatutCommande.java
+³   ³   ³               ³           StatutPaiement.java
+³   ³   ³               ³           
+³   ³   ³               ÃÄÄÄrepository
+³   ³   ³               ³       CommandeRepository.java
+³   ³   ³               ³       ImagePneuRepository.java
+³   ³   ³               ³       LigneCommandeRepository.java
+³   ³   ³               ³       PneuRepository.java
+³   ³   ³               ³       UtilisateurRepository.java
+³   ³   ³               ³       
+³   ³   ³               ÃÄÄÄsecurity
+³   ³   ³               ³       JwtAuthFilter.java
+³   ³   ³               ³       JwtUtil.java
+³   ³   ³               ³       
+³   ³   ³               ÀÄÄÄservice
+³   ³   ³                       AuthService.java
+³   ³   ³                       CommandeExportService.java
+³   ³   ³                       CommandeService.java
+³   ³   ³                       
+³   ³   ÀÄÄÄresources
+³   ³       ³   application-dev.properties
+³   ³       ³   application-prod.properties
+³   ³       ³   application.properties
+³   ³       ³   
+³   ³       ÃÄÄÄstatic
+³   ³       ÀÄÄÄtemplates
+³   ÀÄÄÄtest
+³       ÃÄÄÄjava
+³       ³   ÀÄÄÄcom
+³       ³       ÀÄÄÄpneushop
+³       ³           ÀÄÄÄpneushopbackend
+³       ³                   PneuShopBackendApplicationTests.java
+³       ³                   
+³       ÀÄÄÄresources
+³               application.properties
+³               
+ÀÄÄÄtarget
+    ÃÄÄÄclasses
+    ³       application-dev.properties
+    ³       application-prod.properties
+    ³       application.properties
+    ³       
+    ÃÄÄÄgenerated-sources
+    ³   ÀÄÄÄannotations
+    ÀÄÄÄmaven-status
+        ÀÄÄÄmaven-compiler-plugin
+            ÀÄÄÄcompile
+                ÀÄÄÄdefault-compile
+                        inputFiles.lst
+                        

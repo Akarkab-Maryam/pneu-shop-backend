@@ -39,5 +39,24 @@ public class DataInitializer implements CommandLineRunner {
         } else {
             System.out.println("Utilisateur ADMIN déjà existant : " + emailMokhtar);
         }
+
+        String emailClient = "client@teste.com";
+
+        if (utilisateurRepository.findByEmail(emailClient).isEmpty()) {
+
+            Utilisateur client = new Utilisateur();
+            client.setNom("Client");
+            client.setPrenom("Test");
+            client.setEmail(emailClient);
+            client.setMotDePasse(passwordEncoder.encode("Client123!"));
+            client.setRole(Role.CLIENT);
+            client.setActif(true);
+
+            utilisateurRepository.save(client);
+
+            System.out.println("Utilisateur CLIENT créé : " + emailClient);
+        } else {
+            System.out.println("Utilisateur CLIENT déjà existant : " + emailClient);
+        }
     }
 }

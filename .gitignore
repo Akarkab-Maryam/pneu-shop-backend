@@ -1,6 +1,6 @@
-HELP.md
+# ===== BACKEND (Java / Maven) =====
 target/
-.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
@@ -25,9 +25,25 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
+
+# ===== FRONTEND (Next.js / Node) — dans pneu-shop-frontend/ =====
+pneu-shop-frontend/node_modules/
+pneu-shop-frontend/.next/
+pneu-shop-frontend/out/
+pneu-shop-frontend/build/
+pneu-shop-frontend/.env
+pneu-shop-frontend/.env.local
+pneu-shop-frontend/.env.*.local
+pneu-shop-frontend/npm-debug.log*
+pneu-shop-frontend/yarn-debug.log*
+pneu-shop-frontend/yarn-error.log*
+pneu-shop-frontend/.DS_Store
+pneu-shop-frontend/*.tsbuildinfo
+pneu-shop-frontend/next-env.d.ts
+
+# ===== DIVERS =====
+.DS_Store
+*.log

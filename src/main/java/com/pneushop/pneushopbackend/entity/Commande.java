@@ -108,4 +108,16 @@ public class Commande {
     public void setStatutPaiement(StatutPaiement statutPaiement) {
         this.statutPaiement = statutPaiement;
     }
+
+
+  @Column(name = "archivee", nullable = false)
+  private boolean archivee = false;
+
+ public boolean isArchivee() {
+    return archivee;
+  }
+
+ public void setArchivee(boolean archivee) {
+    this.archivee = archivee;
+ }
 }
